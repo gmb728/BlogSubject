@@ -19,7 +19,7 @@ class PixnetTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let urlStr = "http://gsx2json.com/api?id=1aEh76KQCAjjMTvHEOSP9vQHFuszclzVZsIbtH-8KvNQ&columns=false".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let urlStr = "https://gsx2json.com/api?id=1aEh76KQCAjjMTvHEOSP9vQHFuszclzVZsIbtH-8KvNQ&columns=false".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
                 let url = URL(string: urlStr!)
                 
                 let task = URLSession.shared.dataTask(with: url!) { (data, respose, error) in
